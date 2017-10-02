@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^api/assignments/',
         include('assignments.urls', namespace='assignments')),
     url(r'^api/stories/', include('stories.urls', namespace='stories')),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
